@@ -37,5 +37,10 @@ Hosting PostgreSQL on Google Cloud combines the power and flexibility of a widel
 
 ### 3. Visualize and Interact with Data  
 - **Display Data via Pandas:**  
-  Using **Pandas DataFrames** to display insights, such as the number of crimes by type or location.  
+  Using **Pandas DataFrames** to display insights, such as the number of crimes by type or location. This project uses an interactive map to display crime data in Los Angeles. The map is built using Leaflet.js, which allows users to explore crime incidents by hovering over markers for detailed information about the crime type, location, and dates. Data is retrieved from a Flask API that queries a PostgreSQL database containing crime records. Each marker on the map represents a crime location, and users can click on the markers to see a popup with details of the crime, such as "Crime Type," "Location," "Date Occurred," and "Date Reported."
+
+You can view the mapping output below.
+This description highlights the interactivity and technical structure of the mapping functionality.
+![Mapping Output](output/mapping.png)
+Link:
 
