@@ -22,7 +22,6 @@ Load: In the loading stage, a robust connection to a PostgreSQL database was est
 Validation: To ensure the reliability of the ETL process, comprehensive validation checks were performed. This involved executing SQL queries against the database to confirm that the data had been accurately loaded, thereby verifying the success of the entire ETL workflow. This step is crucial, as it not only assures data integrity but also reinforces the credibility of any subsequent analyses conducted on the imported datasets.
 This structured approach to ETL not only enhances data quality but also lays the groundwork for informed decision-making based on accurate and well-organized data.
 4:50
-I would space everything out and make key points I.E. (Extract,Transform, Load, Ect.) on the read.me bold of course as well but let me know what y’all think I can push it to the masterfile (edited) 
 
 ### 1. 
 -
