@@ -31,10 +31,13 @@ The great_expectations module is a powerful open-source framework used in data e
 Since the source of our data was in CSV files we dcided it would be best to utilize a relation databse, we utilized Postgre SQL for our DB and stored it in the cloud utilizing Google Cloud for Postgre SQL.
 Hosting PostgreSQL on Google Cloud combines the power and flexibility of a widely-used open-source database with the benefits of a fully managed, scalable, and secure cloud infrastructure. This makes it ideal for enterprises, startups, and developers who want to avoid the complexities of managing a database while taking advantage of the cloud's capabilities.
 
-- **Tables or Collections:**  
-  - **Crime Reports:** Contains details like crime type, date, time, location (latitude, longitude), and report ID.  
-  - **Precinct Information:** Stores data about law enforcement jurisdictions or stations, linked to crime reports.
-
+- **Tables:**  
+  - **Crime Reports (crimedata):** Contains reported crime details such as reported date, date/time crime occurred, geographic area code, crime code, location code, and official file number.  
+  - **Look up tables:**
+    - **Geographic Area (address):** Stores area name for geographic area code
+    - **Crime Code (address):** Stores crime code description for crime code
+    - **Crime location (location):** Stores latitude and longitude for location code
+      
 ### 3. Visualize and Interact with Data  
 - **Display Data via Pandas:**  
   Using **Pandas DataFrames** to display insights, such as the number of crimes by type or location. This project uses an interactive map to display crime data in Los Angeles. The map is built using Leaflet.js, which allows users to explore crime incidents by hovering over markers for detailed information about the crime type, location, and dates. Data is retrieved from a Flask API that queries a PostgreSQL database containing crime records. Each marker on the map represents a crime location, and users can click on the markers to see a popup with details of the crime, such as "Crime Type," "Location," "Date Occurred," and "Date Reported."
