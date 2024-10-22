@@ -23,9 +23,13 @@ This project leverages **ETL workflows** to extract, transform, and load crime d
 - **Transform:** Clean and filter the data by removing duplicates, populating null values, and normalizing field names.  
 - **Load:** Store the transformed data into the chosen database (Postgres).
 
+As part of the ETL process we utilized the module great_expectations for Python data cleaning and transformation.
+The great_expectations module is a powerful open-source framework used in data engineering for data quality and validation in Python. It helps ensure that the data being processed meets certain quality standards before it's used in further analysis or machine learning models. With great_expectations, you can define and enforce expectations about your data, such as its structure, values, and distribution, and catch data issues early in your data pipeline.
+
 ### 2. Database Structure  
 - **Choice of Database:**  
-  [Document the database used and the rationale behind the choice, e.g., SQL for structured analysis or MongoDB for unstructured or semi-structured data.]
+Since the source of our data was in CSV files we dcided it would be best to utilize a relation databse, we utilized Postgre SQL for our DB and stored it in the cloud utilizing Google Cloud for Postgre SQL.
+Hosting PostgreSQL on Google Cloud combines the power and flexibility of a widely-used open-source database with the benefits of a fully managed, scalable, and secure cloud infrastructure. This makes it ideal for enterprises, startups, and developers who want to avoid the complexities of managing a database while taking advantage of the cloud's capabilities.
 
 - **Tables or Collections:**  
   - **Crime Reports:** Contains details like crime type, date, time, location (latitude, longitude), and report ID.  
