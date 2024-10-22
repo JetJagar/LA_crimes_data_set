@@ -12,10 +12,6 @@
     └── README.md 
 ## Objective
 
-
-
-## Objective
-
 This project leverages **ETL workflows** to extract, transform, and load crime data for Los Angeles (LA) into a structured **PostgreSQL database hosted on Google Cloud**. The purpose is to facilitate easy querying and analysis of crime patterns using a robust data pipeline. The project utilizes **four tables** to store transformed data and ensures that ethical practices are followed throughout the data processing steps.
 
 ---
