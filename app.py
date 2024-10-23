@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Set up database connection
 engine = create_engine('postgresql://postgres:ut2024!@34.170.166.149:5432/postgres')
 
-
+app = Flask(__name__, template_folder='.')
 @app.route('/')
 def index():
     return render_template('index.html')
